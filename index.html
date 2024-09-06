@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        #portfolio {
+            padding: 20px 0;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .project p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Increased width */
+            height: 500px; /* Increased height */
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 2em;
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pratham Chavan | Software Developer</h1>
+            <p>With over three years of experience as a Full Stack Developer, I have honed my skills in creating dynamic and scalable web applications. My journey includes working independently with various freelance clients, as well as collaborating with teams to deliver impactful projects. I am adept at building end-to-end web solutions for both organizations and companies, and I also specialize in crafting engaging static web designs for creative industry websites. My expertise encompasses the full spectrum of web development, from backend infrastructure to frontend design, ensuring that each project I undertake is both functional and visually compelling.
+            </p>
+        </div>
+    </header>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="project">
+                <h2>New York Events Hub</h2>
+                <p>The New York Events Hub is a sleek, user-friendly platform designed for a New York-based event firm. It features an easy-to-navigate booking system, comprehensive event schedules, detailed event information, engaging blogs, and the latest news updates. This site delivers a seamless experience for discovering and managing events across the city.</p>
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-1">
+                        <img src="abcd.jpg" alt="Project 1 Image 1">
+                    
+                        <img src="23.jpg" alt="Project 1 Image 3">
+                        <img src="24.jpg" alt="Project 1 Image 1">
+                        <img src="25.jpg" alt="Project 1 Image 2">
+                        <img src="26.jpg" alt="Project 1 Image 3">
+                        <img src="27.jpg" alt="Project 1 Image 1">
+                        <img src="28.jpg" alt="Project 1 Image 2">
+                       
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('carousel-1', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('carousel-1', 1)">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project">
+                <h2>Opticreen Software Suite</h2>
+                <p>The Opticreen Software Suite is a custom-built solution developed for a startup company, featuring both a sophisticated website and a versatile Chrome extension.  It enables users to easily adjust screen brightness and apply a blue light filter to enhance visual comfort and reduce eye strain. The integration between the website and extension provides a seamless, user-friendly experience for managing screen settings across different devices.</p>
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-2">
+                        <img src="proj11.jpg" alt="Project 2 Image 1">
+                        <img src="proj12.jpg" alt="Project 2 Image 2">
+                        <img src="13.jpg" alt="Project 2 Image 3">
+                        <img src="14.jpg" alt="Project 2 Image 3">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('carousel-2', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('carousel-2', 1)">&#10095;</button>
+                </div>
+            </div>
+            
+            <!-- Add more projects as needed -->
+
+             <!-- Project 3 -->
+             <div class="project">
+                <h2>FitnessPro Registration & Management System</h2>
+                <p>The FitnessPro Registration & Management System is a robust platform designed for a fitness organization, handling over 4,000 student registrations. The software includes features for fee payment, user management, and seamless registration processes. It efficiently manages large volumes of data and provides an intuitive interface for both administrators and users, ensuring streamlined operations and enhanced user experience.</p>
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-3">
+                        <img src="31.jpg" alt="Project 2 Image 1">
+                        <img src="32.jpg" alt="Project 2 Image 2">
+                        <img src="33.jpg" alt="Project 2 Image 3">
+                        <img src="34.jpg" alt="Project 2 Image 3">
+                        <img src="35.jpg" alt="Project 2 Image 3">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('carousel-3', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('carousel-3', 1)">&#10095;</button>
+                </div>
+            </div>
+            
+
+             <!-- Project 4 -->
+             <div class="project">
+                <h2>MediCare Hospital Website</h2>
+                <p>The MediCare Hospital Website is a comprehensive platform designed to provide essential information and services for patients and visitors. It features detailed profiles of doctors, information on available treatments, and a streamlined appointment booking system. Additionally, the site includes a user-friendly contact form for inquiries and support. This all-in-one solution enhances accessibility and facilitates efficient communication within the hospital ecosystem.</p>
+                <div class="carousel">
+                    <div class="carousel-images" id="carousel-4">
+                        <img src="41.jpg" alt="Project 2 Image 1">
+                        <img src="42.jpg" alt="Project 2 Image 2">
+                        <img src="43.jpg" alt="Project 2 Image 3">
+                        <img src="44.jpg" alt="Project 2 Image 3">
+                        <img src="45.jpg" alt="Project 2 Image 3">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('carousel-4', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('carousel-4', 1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Contact me at <a href="mailto:pratham5685@gmail.com">pratham5685@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function moveCarousel(carouselId, direction) {
+            const carousel = document.getElementById(carouselId);
+            const images = carousel.querySelectorAll('img');
+            const imageWidth = images[0].clientWidth;
+            const totalImages = images.length;
+            let currentPosition = parseInt(getComputedStyle(carousel).transform.split(',')[4]) || 0;
+
+            currentPosition -= direction * imageWidth;
+            if (currentPosition > 0) {
+                currentPosition = -(imageWidth * (totalImages - 1));
+            } else if (currentPosition < -(imageWidth * (totalImages - 1))) {
+                currentPosition = 0;
+            }
+
+            carousel.style.transform = `translateX(${currentPosition}px)`;
+        }
+    </script>
+</body>
+</html>
